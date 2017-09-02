@@ -1,4 +1,7 @@
-﻿<div class="row">
+﻿@using ProcgEnemies.Controllers
+@model Enemy
+
+<div class="row">
     <div class="col-md-6 col-md-offset-3 text-center">
         <h1>Procedural Enemy Ideas</h1>
     </div>
@@ -7,32 +10,32 @@
 <hr />
 
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-3 well">
         <h2>Movement</h2>
-        <h3>Movement Type Name</h3>
+        <h3>@Model.Movement.Name</h3>
         <p>
-            Description of the thing that gets generated.
+            @Model.Movement.Description
         </p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 well">
         <h2>Passive</h2>
-        <h3>Passive Effect Name</h3>
+        <h3>@Model.Passive.Name</h3>
         <p>
-            Description of the thing that gets generated.
+            @Model.Passive.Description
         </p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 well">
         <h2>Ability</h2>
-        <h3>Ability Name</h3>
+        <h3>@Model.Ability.Name</h3>
         <p>
-            Description of the thing that gets generated.
+            @Model.Ability.Description
         </p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 well">
         <h2>Trigger</h2>
-        <h3>Trigger Name</h3>
+        <h3>@Model.Trigger.Name</h3>
         <p>
-            Description of the thing that gets generated.
+            @Model.Trigger.Description
         </p>
     </div>
 </div>
